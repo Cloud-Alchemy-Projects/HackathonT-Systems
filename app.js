@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.status(200).send('<h1>Listo</h1>');
+    res.status(200).render('index.ejs');
 })
 
 // Server configuration
