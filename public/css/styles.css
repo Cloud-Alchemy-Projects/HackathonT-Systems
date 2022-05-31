@@ -19,19 +19,6 @@ body{
     font-family: var(--font-family);
 }
 
-/*-----Section 1 / Background -----*/
-.section1{
-    background-image: url('../images/image2.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*-----Navbar -----*/
 
 .navbar{
@@ -46,11 +33,14 @@ body{
     z-index: 7;
 }
 
-.item{
-    text-decoration: none;
-    padding: 20px;
-    margin: 10px;
+.hamburger{
+    height: 50%;
+    margin-right: 30px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .line{
@@ -59,27 +49,113 @@ body{
     height: 3px;
     border-radius: 10px;
     content: "";
-}
-
-.line::before,.line::after{
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    border-radius: 10px;
-    background-color: white;
-    content: "";
-}
-
-.line::before{
-    transform: translateY(-20px);
-}
-
-.line::after{
-    transform: translateY(-10px);
+    margin: 2.5px 0;
 }
 
 .logo{
-    width: 35%;
+    width: 15%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.blur{
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(8px); 
+    height: 100vh;
+    width: 100%;
+}
+
+.menu-navbar{
+    position: fixed;
+    width: 100%;
+    left: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all 0.5s;
+}
+
+.nav-container{
+    width: 50%;
+    height: 100vh;
+}
+
+.active{
+    left: 0%;
+}
+
+.menu{
+    width: 100%;
+    height: 60%;
+    background-color: var(--color-magenta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-navbar{
+    color: var(--color-text);
+    font-size: 200%;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.black-menu{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-menu{
+    color: var(--color-text);
+    font-size: 100%;
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+.item-menu:hover{
+    color: black;
+}
+
+.black-item{
+    color: var(--color-text);
+    font-size: 100%;
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+.black-item:hover{
+    color: var(--color-magenta);
+}
+
+/* Final Navbar */
+
+
+/*----- Seccion 1 -----*/
+/*-----Section 1 / Background -----*/
+.section1{
+    background-image: url('../images/image2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-section1{
@@ -105,78 +181,8 @@ body{
     text-align: center;
 }
 
-.menu-navbar{
-    position: fixed;
-    width: 50%;
-    left: 50%;
-    height: 80vh;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+/*----- Final Seccion 1 -----*/
 
-.toggle-container{
-    background-color: var(--color-magenta);
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menu{
-    width: 100%;
-    height: 70%;
-    background-color: var(--color-magenta);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo-navbar{
-    color: var(--color-text);
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.black-menu{
-    width: 100%;
-    height: 30%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item-menu{
-    color: var(--color-text);
-    font-size: 10pxrem;
-    text-decoration: none;
-    margin: 30px 0;
-}
-
-.item-menu:hover{
-    color: black;
-}
-
-.black-item{
-    color: var(--color-text);
-    font-size: 10pxrem;
-    text-decoration: none;
-    margin: 30px 0;
-}
-
-.black-item:hover{
-    color: var(--color-magenta);
-}
-
-.hide{
-    display: none;
-}
 
 /*----- Seccion 2 -----*/
 
@@ -189,7 +195,7 @@ body{
     background-image: url("../images/image1.jpg");
 }
 
-    .section2-1 {
+.section2-1 {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -264,3 +270,5 @@ body{
     width: 50%;
     text-align: center;
 }
+
+/*----- Final Seccion 2 -----*/
