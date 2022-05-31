@@ -311,7 +311,7 @@ body{
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 /*----- Final Seccion 2 -----*/
