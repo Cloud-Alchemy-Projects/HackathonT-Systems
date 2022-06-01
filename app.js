@@ -7,7 +7,8 @@ app.get("/", (req, res)=>{
 })
 
 // Server configuration
-const PORT = 3000;
+//const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.set('port', PORT);
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
