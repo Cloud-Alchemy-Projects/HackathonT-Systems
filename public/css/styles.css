@@ -1,5 +1,7 @@
 :root{
     --font-family: 'Poppins';
+    --font-family-secondary: 'TeleNeo Regular';
+    --font-family-secondary-bold: 'TeleNeo Bold';
     --color-text: white;
     --color-magenta: #e20074;
 }
@@ -9,6 +11,22 @@
 *:after {
     box-sizing: border-box;
     margin: 0;
+}
+
+/* Fuentes para las secciones 3 - 5
+   Se referencian de esta manera porque no se encuentran en Google Fonts
+   https://www.cufonfonts.com/font/teleneo-office 
+ */
+@font-face {
+    font-family: "TeleNeo Regular";
+    src: url(../fonts/Tele\ Neo\ Thin.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TeleNeo Bold";
+    src: url(../fonts/Tele\ Neo\ Extrabold.otf);
+    font-weight: bold;
 }
 
 html {
@@ -272,3 +290,41 @@ body{
 }
 
 /*----- Final Seccion 2 -----*/
+
+/*----- Sección 3 -----*/
+#third-section {
+    background-color: #131317;
+    height: 100vh;
+}
+
+#section3-image {
+    border: 5px solid red;
+    width: 57%;
+}
+
+#section3-image img {
+    width: 50%;
+    /* border: 200px solid red; */
+    border-radius: 150px 500px 300px 50px;
+}
+
+#section3-text {
+    border: 5px solid blue;
+}
+
+#section3-text h3 {
+    color: var(--color-magenta);
+}
+
+#section3-text h4 {
+    color: var(--color-text);
+}
+
+#section3-regular-text {
+    font-family: var(--font-family-secondary);
+}
+
+#section3-bold-text {
+    font-family: var(--font-family-secondary-bold);
+}
+/*----- Final Sección 3 -----*/
