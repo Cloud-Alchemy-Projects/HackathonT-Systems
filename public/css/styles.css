@@ -4,6 +4,7 @@
     --font-family-secondary-bold: 'TeleNeo Bold';
     --color-text: white;
     --color-magenta: #e20074;
+    background-color: hsl(207, 68%, 19%);;
 }
 
 *,
@@ -715,3 +716,24 @@ body{
     width: 100%;
 }
 /* Final seccion 6 */
+
+
+/*---- Efectos Fade-In y Fade-Out----*/
+.scrollFade {
+    opacity: 0.5;
+    pointer-events: all;
+}
+
+.scrollFade--hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scrollFade--visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.scrollFade--animate {
+    transition: opacity 2.2s ease-in-out;
+}
