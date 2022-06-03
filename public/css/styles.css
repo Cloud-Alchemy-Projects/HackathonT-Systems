@@ -401,10 +401,19 @@ body{
 
 /*----- texto -----*/
 
-#section3-regular-text {
-
+.section3-regular-text { /*En esta seccion se aplica la animacion del Typewriter*/
     font-family: var(--font-family-secondary);
+    font-size: 60px;
+    color:#0000;
+    background:
+    linear-gradient(-90deg, #131317 5px,#0000 0) 1px 0,
+    linear-gradient(var(--color-magenta) 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
 }
+
 
 #section3-regular-text strong:nth-child(1){
     color: var(--color-magenta);
@@ -737,3 +746,18 @@ body{
 .scrollFade--animate {
     transition: opacity 2.2s ease-in-out;
 }
+
+/*----- Efectos de maquina de escribri del texto aplicado en la seccion 3----*/
+
+.section3-regular-text.active{
+    animation: 
+      b .7s infinite steps(1),   
+      t calc(var(--n)*.1s) steps(var(--n)) forwards;
+  }
+  
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
