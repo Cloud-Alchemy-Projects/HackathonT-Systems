@@ -101,6 +101,7 @@ body{
     align-items: center;
     flex-direction: row;
     transition: all 0.5s;
+    z-index: 6;
 }
 
 .nav-container{
