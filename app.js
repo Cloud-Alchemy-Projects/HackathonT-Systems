@@ -3,11 +3,16 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.status(200).render('index.ejs');
+    res.status(200).render('home/index.ejs');
+})
+
+app.get("/demo", (req, res)=>{
+    res.status(200).render('demo/demo.ejs');
 })
 
 // Server configuration
-const PORT = 3000;
+//const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.set('port', PORT);
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
