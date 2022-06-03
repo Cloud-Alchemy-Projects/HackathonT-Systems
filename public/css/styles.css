@@ -270,7 +270,7 @@ body{
     /* border-right: thick solid #fff; */
     text-align: right;
     color: var(--color-text);
-    font-size: 60px;
+    font-size: 200%;
     font-weight: bold;
 }
 
@@ -309,14 +309,14 @@ body{
 
 .paragraph {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 110%;
     font-weight: lighter;
     margin: 20px 0;
 }
 
 .paragraph-optional {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 110%;
     font-weight: lighter;
 }
 
@@ -362,8 +362,9 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-top: 200px;
+    width: 200px;
+    margin-top: 40%;
+    position: absolute;
 }
 
 .boton{
