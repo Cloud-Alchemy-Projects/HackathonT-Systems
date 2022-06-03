@@ -1,7 +1,7 @@
 var section4 = document.getElementById('fourth-section')
 var circulos = document.querySelectorAll('.circulos')
 var texto = document.getElementById('4-1-wrapper')
-
+var count = 0
 section4.addEventListener("click", () =>{
     if (count<5) {
         count++
