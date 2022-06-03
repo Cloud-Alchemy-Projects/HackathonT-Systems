@@ -3,7 +3,11 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.status(200).render('index.ejs');
+    res.status(200).render('home/index.ejs');
+})
+
+app.get("/demo", (req, res)=>{
+    res.status(200).render('demo/demo.ejs');
 })
 
 // Server configuration
