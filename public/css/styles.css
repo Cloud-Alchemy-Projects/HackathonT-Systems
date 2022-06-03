@@ -246,7 +246,7 @@ body{
 .first-title {
     text-align: center;
     color: var(--color-text);
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -270,7 +270,7 @@ body{
     /* border-right: thick solid #fff; */
     text-align: right;
     color: var(--color-text);
-    font-size: 200%;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -293,8 +293,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin-top: 100px;
+    height: 200px;
 }
 
 .little{
@@ -309,7 +308,7 @@ body{
 
 .paragraph {
     color: var(--color-text);
-    font-size: 110%;
+    font-size: 1rem;
     font-weight: lighter;
     margin: 20px 0;
 }
@@ -339,7 +338,7 @@ body{
     flex-direction: column;
     width: 60%;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -363,8 +362,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 200px;
-    margin-top: 40%;
-    position: absolute;
 }
 
 .boton{
