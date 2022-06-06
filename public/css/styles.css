@@ -160,10 +160,6 @@ body{
     margin-bottom: 20px;
 }
 
-.black-item:hover{
-    color: var(--color-magenta);
-}
-
 .icon-socials{
     justify-content: center;
     align-items: center;
