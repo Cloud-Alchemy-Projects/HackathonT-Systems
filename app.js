@@ -3,6 +3,7 @@ import homeRouter from './server/routes/home.js';
 import demoRouter from './server/routes/demo.js';
 import aboutRouter from './server/routes/about.js';
 import defaultRouter from './server/routes/default.js';
+import workRouter from './server/routes/work.js';
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/", homeRouter)
 app.use("/demo", demoRouter)
 app.use("/about", aboutRouter)
+app.use("/work", workRouter)
 app.use("/*", defaultRouter)
 
 app.listen(app.get('port'), () =>{
