@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(../images/workBackground.jpg);
@@ -12,4 +13,10 @@
 
 .wrapper-work h1{
     color: var(--color-text);
+    font-size: 2rem;
 }
+
+.wrapper-work img{
+    width: 50%;
+}
+
