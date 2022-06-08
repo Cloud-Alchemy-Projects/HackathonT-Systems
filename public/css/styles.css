@@ -79,6 +79,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: var(--color-magenta);
 }
 
 .logo img{
@@ -774,6 +776,11 @@ body{
 
 .logo-T a img{
     width: 100%;
+}
+
+.logo-footer{
+    text-decoration: none;
+    color: var(--color-text);
 }
 
 .logos-redes{
