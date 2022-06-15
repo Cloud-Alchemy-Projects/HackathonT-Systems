@@ -216,8 +216,7 @@ body{
 .subtitulo-section1{
     color: var(--color-text);
     font-weight: 700;
-    font-size: 1rem;
-    font-size: 15pt;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -830,4 +829,41 @@ body{
   }
   @keyframes b{
     50% {background-position:0 -100%,0 0}
+  }
+
+  @media only screen and (max-width: 1000px){
+
+    html{
+        font-size: 8px;
+    }
+
+    /*----- Diseño responsivo Navbar----*/
+    .nav-container{
+        width: 100%;           
+    }
+
+    .blur{
+        width: 0%;
+    }
+    /* Final Navbar */
+
+    /*----- Diseño responsivo seccion 1----*/
+    .section1{
+        background-image: url('../images/Section1Responsive.jpg');
+    }
+
+    .container-section1{
+        width: 80%;
+    }
+
+    .titulo-section1{
+        font-size: 4rem;
+    }
+    
+    .subtitulo-section1{
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    /* Final seccion 1 */
+
   }
