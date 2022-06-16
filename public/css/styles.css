@@ -976,7 +976,35 @@ body{
     }
 
     /* Final seccion 3 */
+    
+    /*----- Diseño responsivo seccion 5----*/
 
+    .section5{
+        background-size:contain;
+        background-repeat:no-repeat;
+        height: 105vh;
+        background-color: black;
+    }
+    
+    .wrapper-5{
+        width: 75%;
+        height: 65%;
+    }
+    
+    .h1-sect-5{
+        margin-top: 15%;
+        font-weight: bolder;
+        font-size: 2.2rem;
+    }
+    
+    .p-sect-5{
+        font-weight:300;
+        line-height: 27px;
+        font-size: 1.6rem;
+    }
+    
+    /* Final seccion 5 */
+    
     /* Inicio seccion 6 */
 
     .wrapper-section-6 {
