@@ -820,18 +820,18 @@ body{
 
 .section3-regular-text.active{
     animation: 
-      b .7s infinite steps(1),   
-      t calc(var(--n)*.1s) steps(var(--n)) forwards;
-  }
-  
-  @keyframes t{
-    from {background-size:0 200%}
-  }
-  @keyframes b{
-    50% {background-position:0 -100%,0 0}
-  }
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.1s) steps(var(--n)) forwards;
+}
 
-  @media only screen and (max-width: 1000px){
+@keyframes t{
+    from {background-size:0 200%}
+}
+@keyframes b{
+    50% {background-position:0 -100%,0 0}
+}
+
+@media only screen and (max-width: 1000px){
 
     html{
         font-size: 8px;
@@ -927,17 +927,17 @@ body{
         font-size: 1.2rem;
     }
 
-     .flecha {
+    .flecha {
         width: 15px;
         height: 15px;
-     }
+    }
 
-     .flecha-opaca {
+    .flecha-opaca {
         width: 15px;
         height: 15px;
-     }
+    }
 
-     .flecha-container{
+    .flecha-container{
         width: 15px;
     }
 
@@ -1044,5 +1044,5 @@ body{
     }
     /* Final Footer */
 
-  }
+}
 
