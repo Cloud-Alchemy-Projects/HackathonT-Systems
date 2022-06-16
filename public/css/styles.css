@@ -980,7 +980,7 @@ body{
     /* Inicio seccion 6 */
 
     .wrapper-section-6 {
-        width: 90%;
+        width: 80%;
     }
 
     .h1-section-6 {
@@ -988,7 +988,8 @@ body{
     }
 
     .button-sec6{
-        padding: 5px 20px;
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 
     .section6 {
