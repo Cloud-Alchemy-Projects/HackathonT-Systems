@@ -976,7 +976,7 @@ body{
     }
 
     /* Final seccion 3 */
-
+    
     /*----- Diseño responsivo seccion 5----*/
 
     .section5{
@@ -1004,6 +1004,45 @@ body{
     }
     
     /* Final seccion 5 */
+    
+    /* Inicio seccion 6 */
+
+    .wrapper-section-6 {
+        width: 80%;
+    }
+
+    .h1-section-6 {
+        line-height: 25px;
+    }
+
+    .button-sec6{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .section6 {
+        height: 90vh;
+    }
+
+    /* Final seccion 6 */
+
+    /* Inicio Footer */
+    .footer {
+        height: 10vh;
+    }
+
+    .footer-container {
+        height: 100%;
+    }
+
+    .logo-T {
+        width: 50%;
+    }
+
+    .logos-redes{
+        width: 20%;
+    }
+    /* Final Footer */
 
   }
 
