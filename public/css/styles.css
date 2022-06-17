@@ -44,7 +44,7 @@ body{
 
 .navbar{
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ body{
 
 .logo{
     width: 12%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,8 +216,7 @@ body{
 .subtitulo-section1{
     color: var(--color-text);
     font-weight: 700;
-    font-size: 1rem;
-    font-size: 15pt;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -620,13 +619,8 @@ body{
     column-gap: 100px;
 }
 
-.last-circles{
-    display: flex;
-    grid-column: 1/4;
-    justify-content: center;
-    align-items: center;
-    column-gap: 100px;
-    grid-template-columns: 200px 200px;
+.center-circle{
+    margin-left: 175px;
 }
 
 .semi-circulo-new {
@@ -821,13 +815,319 @@ body{
 
 .section3-regular-text.active{
     animation: 
-      b .7s infinite steps(1),   
-      t calc(var(--n)*.1s) steps(var(--n)) forwards;
-  }
-  
-  @keyframes t{
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.1s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
     from {background-size:0 200%}
-  }
-  @keyframes b{
+}
+@keyframes b{
     50% {background-position:0 -100%,0 0}
-  }
+}
+
+@media only screen and (max-width: 900px){
+
+    html{
+        font-size: 8px;
+    }
+
+    /*----- Diseño responsivo Navbar----*/
+    .nav-container{
+        width: 100%;           
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .titulo-navbar{
+        font-size: 2rem;
+    }
+
+    .item-menu, .black-item{
+        font-size: 1.5rem;
+    }
+
+    .blur{
+        width: 0%;
+    }
+    /* Final Navbar */
+
+    /*----- Diseño responsivo seccion 1----*/
+    .section1{
+        background-image: url('../images/Section1Responsive.jpg');
+    }
+
+    .container-section1{
+        width: 80%;
+    }
+
+    .titulo-section1{
+        font-size: 4rem;
+    }
+    
+    .subtitulo-section1{
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    /* Final seccion 1 */
+    
+    /*----- Diseño responsivo seccion 2----*/
+
+    .title-container {
+        width: 80%;
+    }
+
+    .second-title {
+        font-size: 2rem;
+    }
+
+    .third-title {
+        font-size: 4rem;
+        letter-spacing: 0.5px;
+    }
+
+    .fifth-title{
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .top-tabla {
+        padding-top: 10px;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .v-line {
+        height: 20%;
+    }
+
+    /* -- Segunda parte -- */
+
+    .first-title {
+        font-size: 2rem;
+    }
+
+    .fourth-title {
+        font-size: 2rem;
+    }
+
+    .text-container-sec2 {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .vertical-line{
+        border: 1px solid white;
+        margin: 0 5%;
+        height: 90%;
+    }
+
+    .paragraph {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+    
+    .paragraph-optional {
+        font-size: 1.2rem;
+    }
+
+    .flecha {
+        width: 15px;
+        height: 15px;
+    }
+
+    .flecha-opaca {
+        width: 15px;
+        height: 15px;
+    }
+
+    .flecha-container{
+        width: 15px;
+    }
+
+    .text-container-sec2:nth-child(3) {
+        font-size: 0.1rem;
+    }
+
+    /* Final seccion 2 */
+
+    /*----- Diseño responsivo seccion 3----*/
+
+    .main-wrapper-3{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #section3-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    #section3-text h3{
+        margin: 0;
+        text-align: center;
+    }
+
+    .wrapper-image-circle{
+        width: 100%;
+        margin: 0 70px 50px 0;
+    }
+
+    .imagen-semi-circulo{
+        height: 200px;
+    }
+
+    /* Final seccion 3 */
+
+    /*----- Diseño responsivo seccion 4----*/
+
+    .section4{
+        background-image: url('../images/image4Responsive.jpg');
+        background-position: bottom;
+        align-items: flex-end;
+    }
+    
+    .heading-4{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 15vh;
+        width: 250px;
+    }
+        
+    .semi-circulo {
+        width: 230px; 
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-wrapper-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .num-4 {
+        font-size: 4rem;
+    }
+    
+    .desc-4 {
+        font-size: 1.6rem;
+    }
+
+    /* Seccion todos juntos responsive */
+    .agrupado-wrapper{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .text-90{
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        width: 250px;
+        transform: rotate(0deg);
+    }
+
+    .circles-wrapper{
+        grid-template-columns: 150px 150px;
+        column-gap: 20px;
+        align-items: flex-end;
+    }
+
+    .semi-circulo-new {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .center-circle{
+        margin: 0;
+    }
+
+    .last-grid{
+        margin-left: 85px;
+    }
+
+    .section5-text{
+        width: 80%;
+        margin-top: 14vh;
+        margin-bottom: 1vh;
+    }
+    /* Termina seccion todos juntos responsive */
+    
+    /* Final seccion 4 */
+    
+    /*----- Diseño responsivo seccion 5----*/
+
+    .section5{
+        background-size:contain;
+        background-repeat:no-repeat;
+        height: 105vh;
+        background-color: black;
+    }
+    
+    .wrapper-5{
+        width: 75%;
+        height: 65%;
+    }
+    
+    .h1-sect-5{
+        margin-top: 15%;
+        font-weight: bolder;
+        font-size: 2.2rem;
+    }
+    
+    .p-sect-5{
+        font-weight:300;
+        line-height: 27px;
+        font-size: 1.6rem;
+    }
+    
+    /* Final seccion 5 */
+    
+    /* Inicio seccion 6 */
+
+    .wrapper-section-6 {
+        width: 80%;
+    }
+
+    .h1-section-6 {
+        line-height: 25px;
+    }
+
+    .button-sec6{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .section6 {
+        height: 90vh;
+    }
+
+    /* Final seccion 6 */
+
+    /* Inicio Footer */
+    .footer {
+        height: 10vh;
+    }
+
+    .footer-container {
+        height: 100%;
+    }
+
+    .logo-T {
+        width: 50%;
+    }
+
+    .logos-redes{
+        width: 20%;
+    }
+    /* Final Footer */
+
+}
+
