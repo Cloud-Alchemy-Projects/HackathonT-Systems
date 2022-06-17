@@ -515,7 +515,7 @@ body{
 
 .section4{
     background-image: url('../images/image4.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -1036,6 +1036,7 @@ body{
 
     .circles-wrapper{
         grid-template-columns: 150px 150px;
+        grid-template-rows: repeat(3, 200px);
         column-gap: 20px;
         align-items: flex-end;
     }
