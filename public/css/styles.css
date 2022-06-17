@@ -187,7 +187,7 @@ body{
 /*-----Section 1 / Background -----*/
 .section1{
     background-image: url('../images/image2.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     width: 100%;
