@@ -110,3 +110,33 @@
 .move-info{
     bottom: 50%;
 }
+
+@media only screen and (max-width: 900px){
+    
+    .cards-section{
+        height: 270vh;
+        justify-content: flex-start;
+    }
+
+    .card-wrapper{
+        grid-template-columns: repeat(2, 175px);
+        grid-template-rows: repeat(7, 225px);
+        /* grid-template-rows: repeat(10, min-content); */
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+
+    .card{
+        width: 175px;
+        height: 150px;
+    }
+
+    .card-tittle{
+        margin: 0;
+        margin-top: 10vh;
+    }
+
+    .text-container-card{
+        height: 50px;
+    }
+}

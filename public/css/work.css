@@ -20,3 +20,12 @@
     width: 50%;
 }
 
+@media only screen and (max-width: 900px){
+    .wrapper-work img{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .wrapper-work{
+        height: 90vh;
+    }
+}

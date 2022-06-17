@@ -826,7 +826,7 @@ body{
     50% {background-position:0 -100%,0 0}
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 900px){
 
     html{
         font-size: 8px;
@@ -845,7 +845,7 @@ body{
         font-size: 2rem;
     }
 
-    .item-menu{
+    .item-menu, .black-item{
         font-size: 1.5rem;
     }
 
