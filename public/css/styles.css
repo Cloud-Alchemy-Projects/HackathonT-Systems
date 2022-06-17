@@ -988,8 +988,6 @@ body{
 
     .section4{
         background-image: url('../images/image4Responsive.jpg');
-        background-position: bottom;
-        align-items: flex-end;
     }
     
     .heading-4{
@@ -1065,8 +1063,7 @@ body{
     /*----- Diseño responsivo seccion 5----*/
 
     .section5{
-        background-size:contain;
-        background-repeat:no-repeat;
+        background-image: url('../images/image5Responsive.jpg');
         height: 105vh;
         background-color: black;
     }
