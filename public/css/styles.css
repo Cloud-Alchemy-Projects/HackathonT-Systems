@@ -702,7 +702,7 @@ body{
 /* Inicio seccion 6 */
 .section6{
     background-image: url('../images/imagen6.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -1108,8 +1108,6 @@ body{
 
     .section6 {
         background-image: url('../images/imagen6.jpg');
-        background-repeat: no-repeat;
-        background-position: bottom;
         height: 90vh;
     }
 

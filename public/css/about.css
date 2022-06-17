@@ -2,7 +2,7 @@
     width: 100%;
     height: 200vh;
     background-image: url(../images/aboutBackground.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -135,7 +135,7 @@
     .text-container-card{
         height: 50px;
     }
-    .text-card{
-        font-size: 1.5rem;
+    .semblanza-container p{
+        font-size: 1rem;
     }
 }
