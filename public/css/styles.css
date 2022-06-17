@@ -44,7 +44,7 @@ body{
 
 .navbar{
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ body{
 
 .logo{
     width: 12%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -619,13 +619,8 @@ body{
     column-gap: 100px;
 }
 
-.last-circles{
-    display: flex;
-    grid-column: 1/4;
-    justify-content: center;
-    align-items: center;
-    column-gap: 100px;
-    grid-template-columns: 200px 200px;
+.center-circle{
+    margin-left: 175px;
 }
 
 .semi-circulo-new {
@@ -842,6 +837,18 @@ body{
         width: 100%;           
     }
 
+    .logo{
+        width: 20%;
+    }
+
+    .titulo-navbar{
+        font-size: 2rem;
+    }
+
+    .item-menu{
+        font-size: 1.5rem;
+    }
+
     .blur{
         width: 0%;
     }
@@ -977,70 +984,81 @@ body{
 
     /* Final seccion 3 */
 
-     /*----- Diseño responsivo seccion 4----*/
+    /*----- Diseño responsivo seccion 4----*/
 
-     .section4{
-        
-        justify-content: center;
-        align-items: center;
-        scroll-snap-align: start;
+    .section4{
+        background-image: url('../images/image4Responsive.jpg');
+        background-position: bottom;
+        align-items: flex-end;
     }
     
     .heading-4{
-        color: var(--color-text);
-        font-size: 3.2rem;
+        font-size: 3rem;
         font-weight: bold;
-        margin-top: 45%;
-        margin-right: 20%;
+        margin-top: 15vh;
         width: 250px;
     }
         
     .semi-circulo {
         width: 230px; 
-        height: 280px;
-        border: 2px solid var(--color-magenta); 
-        background: var(--color-magenta);
-        -moz-border-radius: 100px 100px 0 0;
-        -webkit-border-radius: 100px 100px 0 0;
-        border-radius: 350px 350px 0 0;
+        height: 230px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
     
     .main-wrapper-4 {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        width: 80%;
-        height: 100vh;
-        bottom: 10px;
-    }
-    
-    .content-circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 20%;
     }
     
     .num-4 {
-        color: var(--color-text);
-        margin-bottom: 40px;
         font-size: 4rem;
-        font-weight: bold;
     }
     
     .desc-4 {
-        color: var(--color-text);
-        font-weight: 200;
-        text-align: center;
-        margin: 0 20px;
         font-size: 1.6rem;
     }
+
+    /* Seccion todos juntos responsive */
+    .agrupado-wrapper{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .text-90{
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        width: 250px;
+        transform: rotate(0deg);
+    }
+
+    .circles-wrapper{
+        grid-template-columns: 150px 150px;
+        column-gap: 20px;
+        align-items: flex-end;
+    }
+
+    .semi-circulo-new {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .center-circle{
+        margin: 0;
+    }
+
+    .last-grid{
+        margin-left: 85px;
+    }
+
+    .section5-text{
+        width: 80%;
+        margin-top: 14vh;
+        margin-bottom: 1vh;
+    }
+    /* Termina seccion todos juntos responsive */
     
     /* Final seccion 4 */
     
