@@ -1107,8 +1107,10 @@ body{
     }
 
     .section6 {
-        background-image: url('../images/image5Responsive.jpg');
-        /* height: 90vh; */
+        background-image: url('../images/imagen6.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 90vh;
     }
 
     /* Final seccion 6 */

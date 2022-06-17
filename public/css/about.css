@@ -135,4 +135,7 @@
     .text-container-card{
         height: 50px;
     }
+    .text-card{
+        font-size: 1.5rem;
+    }
 }
