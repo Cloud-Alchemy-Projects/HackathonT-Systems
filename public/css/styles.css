@@ -988,6 +988,8 @@ body{
 
     .section4{
         background-image: url('../images/image4Responsive.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
     }
     
     .heading-4{
@@ -1063,8 +1065,9 @@ body{
     /*----- Diseño responsivo seccion 5----*/
 
     .section5{
-        background-image: url('../images/image5Responsive.jpg');
-        height: 105vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100vh;
         background-color: black;
     }
     
@@ -1103,7 +1106,8 @@ body{
     }
 
     .section6 {
-        height: 90vh;
+        background-image: url('../images/image5Responsive.jpg');
+        /* height: 90vh; */
     }
 
     /* Final seccion 6 */
