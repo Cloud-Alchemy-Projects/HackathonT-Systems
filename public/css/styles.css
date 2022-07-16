@@ -1,9 +1,13 @@
 :root{
-    --font-family: 'Poppins';
+    --font-family: 'Poppins', sans-serif;
     --font-family-secondary: 'TeleNeo Regular';
+    --font-family-secondary-2: 'TeleNeo 2';
     --font-family-secondary-bold: 'TeleNeo Bold';
+    --font-family-secondary-bold-2: 'TeleNeo Bold 2';
     --color-text: white;
     --color-magenta: #e20074;
+    --color-secondary: #FF57A2;
+    --color-third: #97004D;
     background-color: hsl(207, 68%, 19%);
 }
 
@@ -28,6 +32,18 @@
     font-family: "TeleNeo Bold";
     src: url(../fonts/Tele\ Neo\ Extrabold.otf);
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "TeleNeo Bold 2";
+    src: url(../fonts/Tele\ Neo\ Office\ Bold.ttf);
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: "TeleNeo 2";
+    src: url(../fonts/Tele\ Neo\ Office.ttf);
+    /* font-weight: bold; */
 }
 
 html {
@@ -60,7 +76,6 @@ body{
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -68,19 +83,31 @@ body{
     background-color: white;
     width: 20px;
     height: 3px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     content: "";
     margin: 2.5px 0;
 }
 
+.line:nth-child(3){
+    width: 15px;
+}
+
 .logo{
-    width: 12%;
-    /* margin-left: 30px; */
+    width: 200px;
+    margin-left: 30px;
     display: flex;
-    justify-content: center;
+
     align-items: center;
     text-decoration: none;
     color: var(--color-magenta);
+}
+
+.logo-navbar-magenta{
+    display: flex;
+}
+
+.logo-navbar-white{
+    display:none;
 }
 
 .logo img{
@@ -92,6 +119,7 @@ body{
     backdrop-filter: blur(8px); 
     height: 100vh;
     width: 100%;
+    position: absolute;
 }
 
 .menu-navbar{
@@ -108,8 +136,16 @@ body{
     z-index: 6;
 }
 
+.navigation-wrapper{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
 .nav-container{
-    width: 50%;
+    width: 30vw;
     height: 100vh;
 }
 
@@ -120,6 +156,7 @@ body{
 .menu{
     width: 100%;
     height: 60%;
+    padding-top: 12vh;
     background-color: var(--color-magenta);
     display: flex;
     flex-direction: column;
@@ -127,11 +164,24 @@ body{
     align-items: center;
 }
 
+.image-logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.logo-nav-menu{
+    width: 100px;
+}
+
 .titulo-navbar{
     color: var(--color-text);
-    font-size: 200%;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .black-menu{
@@ -146,10 +196,15 @@ body{
 
 .item-menu{
     color: var(--color-text);
-    font-size: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-decoration: none;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
+/* 
+.item-menu:nth-child(3){
+    margin: 30px 0;
+} */
 
 .item-menu:hover{
     color: black;
@@ -157,7 +212,8 @@ body{
 
 .black-item{
     color: var(--color-text);
-    font-size: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-decoration: none;
     margin-bottom: 20px;
 }
@@ -178,7 +234,7 @@ body{
 }
 
 .social-space{
-    margin: 0 10px;
+    margin: 0 40px;
 }
 /* Final Navbar */
 
@@ -186,7 +242,7 @@ body{
 /*----- Seccion 1 -----*/
 /*-----Section 1 / Background -----*/
 .section1{
-    background-image: url('../images/image2.jpg');
+    background-image: url('../images/Section1Responsive.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -203,21 +259,26 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
 }
 
 .titulo-section1{
     color: var(--color-text);
-    font-weight: bold;
-    font-size: 5rem;
-    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    /* margin-bottom: 10px; */
+}
+
+.hr-container{
+    width: 10%;
+    margin: 10px 0
 }
 
 .subtitulo-section1{
     color: var(--color-text);
-    font-weight: 700;
+    font-weight: normal;
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     text-align: center;
 }
 
@@ -253,16 +314,20 @@ body{
 }
 
 .second-title {
+    font-family: var(--font-family-secondary);
     color: var(--color-text);
     font-size: 25px;
     font-weight: lighter;
+}
+
+.strong-Neo{
+    font-family: var(--font-family-secondary-bold);
 }
 
 .third-title {
     text-align: right;
     color: var(--color-magenta);
     font-size: 70px;
-    font: normal normal medium;
     letter-spacing: 5.0px;
     font-weight: 500;
     opacity: 1;
@@ -277,9 +342,10 @@ body{
 }
 
 .fifth-title{
-    margin-left: 10px;
+    font-family: var(--font-family-secondary);
+    margin-left: 50px;
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
@@ -289,14 +355,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 70%;
-}
-.tabla {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    height: 200px;
-    width: 100%;
 }
 
 .v-line {
@@ -333,77 +391,32 @@ body{
     scroll-snap-align: start;
 }
 
-.text-container-sec2{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100vh;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.flecha-container{
-    width: 20%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flecha{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.paginacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-}
-
-.boton{
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: var(--color-text);
-    margin: 0 10px;
-    opacity: 0.2;
-}
-
-.flecha-opaca{
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.selected{
-    opacity: 1;
-}
-
-.rotacion-derecha{
-    transform: rotate(270deg);
-}
-.rotacion-izquierda{
-    transform: rotate(90deg);
-}
-.vertical-line{
-    border: 2px solid white;
-    margin: 0 30px;
-    /* width: 20px; */
+/* New section 2-2 */
+.container-section-2{
+    width: 50%;
     height: 100%;
-    background-color: white;
-}
-
-.p-wrapper{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.hide{
-    display: none !important;
+.h1-section-2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-text);
 }
+
+.h4-section-2{
+    font-family: var(--font-family-secondary-2);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-text);
+}
+/* End new section 2-2 */
+
 
 /*----- Final Seccion 2 -----*/
 
@@ -455,9 +468,8 @@ body{
 
 /*----- texto -----*/
 
-.section3-regular-text { /*En esta seccion se aplica la animacion del Typewriter*/
+/*.section3-regular-text { En esta seccion se aplica la animacion del Typewriter
     font-family: var(--font-family-secondary);
-    font-size: 60px;
     color:#0000;
     background:
     linear-gradient(-90deg, #131317 5px,#0000 0) 1px 0,
@@ -466,46 +478,31 @@ body{
     -webkit-background-clip:padding-box,text;
     background-clip:padding-box,text;
     background-repeat:no-repeat;
-}
-
-
-#section3-regular-text strong:nth-child(1){
-    color: var(--color-magenta);
-    font-family: var(--font-family-secondary-bold);
-}
-
-#section3-regular-text strong:nth-child(2){
-    color: var(--color-text);
-    font-family: var(--font-family-secondary-bold);
-}
+}*/
 
 #section3-text{
     width: 40%;
 }
 
 #section3-text h3 {
+    font-family: var(--font-family-secondary);
     color: var(--color-text);
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: lighter;
     text-align: left;
-    margin-right: 100px;
+    margin: 0 100px 0 50px;
 }
 
-#section3-text h4 {
+#section3-regular-text b:nth-child(1){
+    color: var(--color-magenta);
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#section3-regular-text strong:nth-child(2){
     color: var(--color-text);
-}
-
-#section3-regular-text {
-    font-family: var(--font-family-secondary);
-    font-size: 3rem;
-    font-weight: 1000;
-    margin-left: 30px;
-}
-
-#section3-bold-text {
-    font-family: var(--font-family-secondary-bold);
-    font-size: 3rem;
-    font-weight: 1000;
+    font-family: var(--font-family-secondary-bold-2);
 }
 
 /*----- Final Sección 3 -----*/
@@ -651,6 +648,73 @@ body{
     font-size: 1rem;
 }
 
+/* New seccion 3 */
+
+.new-section-3-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-title-s3-wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-title-s3{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hexagon-container{
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hexagon{
+    width: 200px;
+    height: 230px;
+    clip-path: polygon(50% 0, 100% 30%, 98% 75%, 50% 100%, 2% 75%, 0 30%);
+    background-color: var(--color-magenta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon-h1{
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.hexagon-p{
+    font-family: var(--font-family-secondary);
+    color: var(--color-text);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.arrow{
+    width: 50px;
+    height: 40px;
+    clip-path: polygon(0 40%, 65% 40%, 55% 0, 100% 50%, 55% 100%, 65% 60%, 0 60%);
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+}
+/* End New seccion 3 */
+
 /*----- Final Seccion 4 -----*/
 
 
@@ -679,8 +743,8 @@ body{
 
 .h1-sect-5{
     color: var(--color-text);
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -689,11 +753,16 @@ body{
 }
 
 .p-sect-5{
+    font-family: var(--font-family-secondary);
     color: var(--color-text);
     font-weight: lighter;
     text-align: center;
     line-height: 40px;
     font-size: 1.2rem;
+}
+
+.p-sect-5 strong{
+    font-family: var(--font-family-secondary-bold-2);
 }
 
 
@@ -706,7 +775,7 @@ body{
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,18 +791,25 @@ body{
 }
 
 .h1-section-6{
+    font-family: var(--font-family-secondary);
     margin-bottom: 30px;
     text-align: center;
     color: var(--color-text);
     line-height: 50px;
-    font-weight: 300;
+
+}
+
+.h1-section-6 strong:nth-child(1){
+    font-family: var(--font-family-secondary-bold-2);
 }
 
 .h1-section-6 strong:nth-child(2){
+    font-family: var(--font-family-secondary-bold-2);
     color: var(--color-magenta);
 }
 
-.button-sec6{
+.button-sec6{    
+    font-family: var(--font-family-secondary-2);
     background-color: var(--color-magenta);
     color: var(--color-text);
     border-radius: 5px;
@@ -749,7 +825,7 @@ body{
 
 .footer{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -757,7 +833,7 @@ body{
 }
 
 .footer-container{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -765,7 +841,7 @@ body{
 }
 
 .logo-T{
-    width: 20%;
+    width: 225px;
 }
 
 .logo-T a img{
@@ -778,11 +854,15 @@ body{
 }
 
 .logos-redes{
-    width: 10%;
+    width: 125px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.logos-redes a:nth-child(2){
+    margin: 0 20px;
 }
 
 .logos-redes a img{
@@ -833,12 +913,21 @@ body{
     }
 
     /*----- Diseño responsivo Navbar----*/
+
     .nav-container{
         width: 100%;           
     }
 
     .logo{
         width: 20%;
+    }
+
+    .logo-navbar-magenta{
+        display: none;
+    }
+
+    .logo-navbar-white{
+        display:flex;
     }
 
     .titulo-navbar{
@@ -1063,14 +1152,14 @@ body{
     /*----- Diseño responsivo seccion 5----*/
 
     .section5{
-        background-image: url('../images/image5Responsive.jpg');
-        height: 105vh;
+        background-image: url('../images/image5.jpg');
+        height: 100vh;
         background-color: black;
     }
     
     .wrapper-5{
         width: 75%;
-        height: 65%;
+        height: 80%;
     }
     
     .h1-sect-5{
@@ -1102,16 +1191,9 @@ body{
         padding: 10px 20px;
     }
 
-    .section6 {
-        height: 90vh;
-    }
-
     /* Final seccion 6 */
 
     /* Inicio Footer */
-    .footer {
-        height: 10vh;
-    }
 
     .footer-container {
         height: 100%;
