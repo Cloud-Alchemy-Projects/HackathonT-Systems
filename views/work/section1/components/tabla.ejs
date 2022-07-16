@@ -1,0 +1,16 @@
+<% if(hide==='false'){ %>
+    <div class = "tabla" data-aos="fade-right">
+<% } else {%>
+    <div class = "tabla hide">
+    <% }%>
+    <h4 class = "type-work"> <%= title %></h4>
+    <div class="vertical-line"></div>
+    <div class="p-wrapper">
+        <p class= "work-explanation"> <%= description %></p>
+        <% if(typeof optional!='undefined'){ %>
+            <p class= "work-optional" > <%= optional %> </p> 
+        <% }%>
+    </div>
+</div>
+
+
