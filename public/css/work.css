@@ -2,7 +2,7 @@
     width: 100%;
     height: 85vh;
     background-color: white;
-    /* background-image: url(../images/workBackground.jpg); */
+    background-image: url(../images/OurworkBackground.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .flecha-container{
@@ -71,7 +71,7 @@
 .text-container-sec2{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     height: 100vh;
     justify-content: center;
     align-items: center;
