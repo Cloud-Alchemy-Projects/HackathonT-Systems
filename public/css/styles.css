@@ -512,7 +512,7 @@ body{
 
 .section4{
     background-image: url('../images/image4.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -771,7 +771,7 @@ body{
 /* Inicio seccion 6 */
 .section6{
     background-image: url('../images/imagen6.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -1077,6 +1077,8 @@ body{
 
     .section4{
         background-image: url('../images/image4Responsive.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
     }
     
     .heading-4{
@@ -1123,6 +1125,7 @@ body{
 
     .circles-wrapper{
         grid-template-columns: 150px 150px;
+        grid-template-rows: repeat(3, 200px);
         column-gap: 20px;
         align-items: flex-end;
     }
@@ -1198,11 +1201,7 @@ body{
     .footer-container {
         height: 100%;
     }
-
-    .logo-T {
-        width: 50%;
-    }
-
+    
     .logos-redes{
         width: 20%;
     }
